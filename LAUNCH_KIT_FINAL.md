@@ -206,6 +206,37 @@ Submit the URL (`https://subgrad.vercel.app`) in the URL field, leave the text f
 
 **What changed:** the guest-mode blocker — HN's stated hardest exclusion — is resolved, and the subgrad/subgradient collision is now pre-empted in the second line instead of left for someone else to catch. The remaining blocker is entirely the account gate (see below).
 
+**Confirmed live, today:** created an HN account and tried to submit — got "Sorry, your account isn't able to submit this site." Not a bug, not this-domain-specific — this is HN's standard new-account submission gate. Two real paths forward, neither is same-day: (1) genuinely comment on HN for a couple weeks, then retry: (2) email `hn@ycombinator.com` honestly describing the project and ask to be enabled — this is the documented, sanctioned route, not a workaround. Worth doing both in parallel.
+
+---
+
+### IndieHackers — no account-age gate, postable today
+
+**Post title:** I built four labs where you break gradient descent, backprop, and tensor shapes on purpose (solo, live, zero users)
+
+**Body:**
+
+> I'm a student, this is a solo side project built between classes, and today's the first time it's in front of anyone. No users, no metrics, nothing to sell.
+>
+> I started out building an AI math tutor and about a week in realized I was just building a worse ChatGPT. My actual problem with gradient descent was never that nobody explained it — I could recite the update rule fine. I had no feel for what setting the learning rate to 0.9 would actually do to a real run.
+>
+> So I scrapped that and built four things you poke instead of read:
+>
+> - A 3D loss surface you step through one gradient update at a time — bowl, saddle, Rosenbrock. Push the learning rate too high and watch it oscillate out instead of settling.
+> - A backprop graph with pathology modes you flip on deliberately — exploding gradients, vanishing gradients, dead ReLUs — so you see where the damage starts, not just NaN at the end.
+> - An outlier/leverage sandbox — drag one point, watch an OLS fit and its MSE swing live.
+> - A static shape checker — paste a PyTorch model, it flags where a dimension mismatch first happens instead of where it finally throws.
+>
+> The part I'm actually testing: the tutor watches the simulation state, not just your chat messages. If your loss blows up in the Surface Lab, it interrupts mid-run and asks what you think just happened, without you typing anything. Right now that's a threshold trigger, not the model reasoning over your whole trajectory — being honest about how much of a first step that is.
+>
+> Math is computed by SymPy on the backend, not guessed by the model — the model does the pedagogy, SymPy does the numbers.
+>
+> Live, no signup: [subgrad.vercel.app](https://subgrad.vercel.app). Desktop only right now — mobile's genuinely bad, not just cramped. Backend's a free Render instance so the first request cold-starts for 30-60s.
+>
+> What I actually want to know: if you've taught or learned gradient descent, what was the moment it clicked, or the thing that never did? I built this whole thing around my own click moment — watching a too-large learning rate fly a point out of a valley — and I don't know if that's universal or just mine.
+
+**Where to post it:** IndieHackers has a "Products" listing (one-time, evergreen — worth filling out too: name, tagline, link) and a community feed post, which is the one above. Tag it as a launch/milestone post if the UI offers a category — that's the audience actively looking for exactly this kind of post.
+
 ---
 
 ## Account timeline — the real one, based on what's actually true today
