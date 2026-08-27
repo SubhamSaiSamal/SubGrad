@@ -19,7 +19,7 @@ Vercel Analytics (vercel.com → subgrad → Analytics) the day after each post.
 | Graph Lab **vertical**, 1080×1920 | `clips/subgrad-graph-lab-9x16.gif` | Reels / Shorts / TikTok. Stacked crops, legible on a phone. |
 | Carousel slides, 1080×1080 | `carousel/subgrad-slide-*.png` | LinkedIn / Twitter / IG carousel |
 | Clip build script | `make_clips.py` | Regenerates every clip above from the raw exports. Re-run after UI changes. |
-| Launch post drafts (4 channels) | `../LAUNCH_KIT_FINAL.md` | — |
+| Launch post drafts (4 channels) | `LAUNCH_KIT_FINAL.md` | — |
 
 > Raw `gif_creator` exports play at **2300 ms/frame (~0.43 fps)** regardless of
 > capture spacing — that, not the capture rate, is why the first cuts looked
