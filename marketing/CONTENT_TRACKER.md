@@ -13,11 +13,17 @@ Vercel Analytics (vercel.com → subgrad → Analytics) the day after each post.
 | Asset | File | Where it works |
 |---|---|---|
 | λ logo, 600×600 | `subgrad-mark.png` | LinkedIn page, profile, favicon source |
-| Surface Lab clip — saddle escape | `subgrad-clip1-surface-lab-saddle-escape-v2.gif` | Any post that needs "watch it break" in one frame |
-| Graph Lab clip — explode + tutor interrupt | `subgrad-clip2-graph-lab-explode-tutor-interrupt-v2.gif` | Best single asset for the "tutor reacts to state" claim |
-| Full walkthrough (QA-style) | `subgrad-live-test.gif` | Not launch-grade — has click overlays. Internal proof only. |
+| **Sizzle reel**, 1280×720, 5.2s | `clips/subgrad-sizzle-16x9.gif` | Lead asset. Both labs + end card. IndieHackers, LinkedIn, Twitter. |
+| Surface Lab, 1280×720, 2.7s | `clips/subgrad-surface-lab-16x9.gif` | The saddle escape, captioned |
+| Graph Lab, 1280×720, 3.3s | `clips/subgrad-graph-lab-16x9.gif` | Best single asset for the "tutor reacts to state" claim |
+| Graph Lab **vertical**, 1080×1920 | `clips/subgrad-graph-lab-9x16.gif` | Reels / Shorts / TikTok. Stacked crops, legible on a phone. |
 | Carousel slides, 1080×1080 | `carousel/subgrad-slide-*.png` | LinkedIn / Twitter / IG carousel |
+| Clip build script | `make_clips.py` | Regenerates every clip above from the raw exports. Re-run after UI changes. |
 | Launch post drafts (4 channels) | `../LAUNCH_KIT_FINAL.md` | — |
+
+> Raw `gif_creator` exports play at **2300 ms/frame (~0.43 fps)** regardless of
+> capture spacing — that, not the capture rate, is why the first cuts looked
+> laggy. `make_clips.py` retimes to 140 ms/frame. Never post a raw export.
 
 ---
 
