@@ -1,4 +1,4 @@
-# subgrad
+# SubGrad
 
 **Four interactive labs for the parts of ML that never click from reading.**
 
