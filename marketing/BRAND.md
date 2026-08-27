@@ -96,8 +96,7 @@ recently, not by a marketing department.
 ## Standing facts (keep current)
 
 - **Live:** https://subgrad.vercel.app — guest mode works, all four labs, no login
-- **Repo:** github.com/SubhamSaiSamal/FlowLogic *(note: repo name still says
-  FlowLogic, the pre-rename name — mismatch is visible to anyone who clicks)*
+- **Repo:** github.com/SubhamSaiSamal/SubGrad
 - **Stack:** FastAPI · SymPy · Gemini (function calling) · React/Vite · Three.js ·
   React Flow · Zustand · Supabase · Tailwind
 - **Infra:** Vercel (frontend) + Render free tier (backend — 30-60s cold start,
