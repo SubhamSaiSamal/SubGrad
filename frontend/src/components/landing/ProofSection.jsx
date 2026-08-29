@@ -4,7 +4,7 @@ import { container, fadeUp, viewportOnce } from "./motion";
 
 const CRED = [
   { k: "Open-source minded", v: "no walled gardens" },
-  { k: "Built by builders", v: "not corporate suits" },
+  { k: "Built by a builder", v: "not corporate suits" },
   { k: "Shipped in the open", v: "scrappy by design" },
 ];
 
@@ -14,17 +14,20 @@ export default function ProofSection() {
       <div className="mx-auto max-w-4xl px-6 text-center">
         <Reveal>
           <div className="font-mono text-[11px] uppercase tracking-[0.18em] text-emerald-500">
-            // 03 · The Builders
+            // 03 · The Builder
           </div>
           <h2 className="mt-4 font-mono text-3xl font-bold leading-[1.15] tracking-tight text-slate-100 md:text-4xl">
             Engineered in the trenches.{" "}
-            <span className="text-emerald-400">Backed by the Hack Club open-source community.</span>
+            <span className="text-emerald-400">Built by one person who needed it to exist.</span>
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-slate-400">
-            subgrad was forged as part of{" "}
-            <span className="text-slate-200">Hack Club Horizon</span> — by people who actually had
-            to debug the size-mismatch at 3am, not a committee writing a roadmap. Developers trust
-            tools made by builders who felt the same pain.
+            subgrad is built and maintained by{" "}
+            <span className="text-slate-200">Subham Sai Samal</span>, a Class 10 student at
+            Jawahar Vidyalaya Senior Secondary School in Chennai — the person who actually had to
+            debug the size-mismatch at 3am, not a committee writing a roadmap. His other work
+            includes ARGUS, a few-shot bioacoustic detector that learns a bird species from five
+            labelled examples, and Printscribe, a 3rd-place build at the CBSE Regional Skill Expo
+            2025. Built in the open at Hack Club Horizon.
           </p>
         </Reveal>
 
@@ -36,7 +39,7 @@ export default function ProofSection() {
           >
             <span className="hero-dot-pulse h-1.5 w-1.5 bg-emerald-400" />
             <span className="font-mono text-xs uppercase tracking-[0.14em] text-emerald-300">
-              Hack Club Horizon · Class of &apos;26
+              Subham Sai Samal · Chennai, India
             </span>
           </motion.div>
         </Reveal>

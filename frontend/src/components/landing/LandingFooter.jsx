@@ -11,7 +11,7 @@ export default function LandingFooter() {
           </span>
         </div>
         <div className="font-mono text-[11px] text-slate-600">
-          Built in the trenches for Hack Club Horizon · Gemini + SymPy
+          Built by Subham Sai Samal at Hack Club Horizon · Gemini + SymPy
         </div>
       </div>
     </footer>
